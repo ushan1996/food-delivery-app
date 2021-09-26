@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:food_app/Screens/splash_screen/getting_started.dart';
+import 'package:food_app/utils/constent.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -28,7 +30,7 @@ class _SplashScreenState extends State<SplashScreen> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset("assets/images/food.png"),
+              Image.asset(Constants.imageAsset('food.png')),
               SizedBox(
                 height: 8,
               ),
